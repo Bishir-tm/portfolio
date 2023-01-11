@@ -1,0 +1,274 @@
+*{
+    margin: 0;
+    border: 0;
+    padding: 0;
+}
+
+.bg-oxford{
+    background-color: #040926ff;
+}
+
+.text-oxford{
+    color: #040926ff;
+}
+
+.bg-thisle{
+    background-color: thistle;
+}
+
+.text-thisle{
+    color: thistle;
+}
+
+/* 
+ CSS HEX
+--thistle: #cfbcdfff;
+--black-shadows: #b8a3abff;
+--oxford-blue: #040926ff;
+--cornflower-blue: #7d93f2ff;
+
+CSS HSL
+--thistle: hsla(273, 35%, 81%, 1);
+--black-shadows: hsla(337, 13%, 68%, 1);
+--oxford-blue: hsla(231, 81%, 8%, 1);
+--cornflower-blue: hsla(229, 82%, 72%, 1);
+
+
+SCSS Gradient 
+$gradient-top: linear-gradient(0deg, #cfbcdfff, #b8a3abff, #040926ff, #7d93f2ff);
+$gradient-right: linear-gradient(90deg, #cfbcdfff, #b8a3abff, #040926ff, #7d93f2ff);
+$gradient-bottom: linear-gradient(180deg, #cfbcdfff, #b8a3abff, #040926ff, #7d93f2ff);
+$gradient-left: linear-gradient(270deg, #cfbcdfff, #b8a3abff, #040926ff, #7d93f2ff);
+$gradient-top-right: linear-gradient(45deg, #cfbcdfff, #b8a3abff, #040926ff, #7d93f2ff);
+$gradient-bottom-right: linear-gradient(135deg, #cfbcdfff, #b8a3abff, #040926ff, #7d93f2ff);
+$gradient-top-left: linear-gradient(225deg, #cfbcdfff, #b8a3abff, #040926ff, #7d93f2ff);
+$gradient-bottom-left: linear-gradient(315deg, #cfbcdfff, #b8a3abff, #040926ff, #7d93f2ff);
+$gradient-radial: radial-gradient(#cfbcdfff, #b8a3abff, #040926ff, #7d93f2ff);
+*/
+
+body{
+    background-color:thistle;
+
+}
+
+
+header{
+    background: linear-gradient(52deg, rgba(253, 152, 152, 0.2) 0%, rgba(0,18,179,1) 11%, rgba(0,52,129,0.2) 32%, rgba(213,1,1,0.2) 53%, rgba(5,39,74,1) 81%, rgba(0,0,0,0.2) 99%);
+    backdrop-filter: blur(7px);
+    z-index: 5000;
+}
+
+@media (max-width: 992px) {
+    .navbar-collapse{
+        background: linear-gradient(52deg, rgba(0,0,0,0.2) 0%, rgba(0,18,179,1) 11%, rgba(0,52,129,0.2) 32%, rgba(213,1,1,0.2) 53%, rgba(5,39,74,1) 81%, rgba(0,0,0,0.2) 99%);        backdrop-filter: blur(7px);
+        padding: 19px ;
+        position: fixed;
+        right: 0px;
+        top:auto;
+        border-bottom-left-radius: 50px;
+        font-weight: bolder;
+        z-index: 4000;
+        height: 50vh;
+        width: 30%;
+    }
+    
+}
+
+a.nav-link{
+    color: white;
+}
+
+.has-raduis{
+    border-radius: 50px ;
+}
+.rainbow-bg{
+    /* background: linear-gradient(96deg, rgba(0,6,59,1) 1%, rgba(24,50,88,1) 36%, rgb(65, 10, 62) 71%, rgb(68, 28, 146) 100%); */
+    background: linear-gradient(96deg, rgba(0,6,59,1) 1%, rgba(24,50,88,1) 36%, rgb(24,50,88,1) 71%, rgb(0,6,59,1) 100%);
+
+
+}
+
+.rainbow-border{
+    background: radial-gradient(circle at 100% 100%, #ffffff 0, #ffffff 25px, transparent 25px) 0% 0%/30px 30px no-repeat,
+            radial-gradient(circle at 0 100%, #ffffff 0, #ffffff 25px, transparent 25px) 100% 0%/30px 30px no-repeat,
+            radial-gradient(circle at 100% 0, #ffffff 0, #ffffff 25px, transparent 25px) 0% 100%/30px 30px no-repeat,
+            radial-gradient(circle at 0 0, #ffffff 0, #ffffff 25px, transparent 25px) 100% 100%/30px 30px no-repeat,
+            linear-gradient(#ffffff, #ffffff) 50% 50%/calc(100% - 10px) calc(100% - 60px) no-repeat,
+            linear-gradient(#ffffff, #ffffff) 50% 50%/calc(100% - 60px) calc(100% - 10px) no-repeat,
+            linear-gradient(52deg, #ff0505 0%, #000488 100%);
+    border-radius: 30px;
+    padding: 35px;
+    box-sizing: content-box;
+
+}
+
+.rainbow-text{
+    background: #0D168C;
+    background: repeating-linear-gradient(to bottom left, #0D168C 0%, #B31210 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+a.nav-link:hover{
+    color: #8c8282;
+    text-decoration-line: underline;
+    transition: 2.5s;
+    
+}
+
+.home-banner{
+    background: rgb(0,0,0);
+    background: linear-gradient(52deg, rgba(0,0,0,1) 0%, rgba(0,18,179,1) 11%, rgba(0,52,129,1) 32%, rgba(213,1,1,1) 53%, rgba(5,39,74,1) 81%, rgba(0,0,0,1) 99%);    /* background-image: url(../images/4138062.jpg); */
+    background-size: cover;
+    padding: 3.5rem !important;
+    background-repeat: no-repeat;
+    padding-top: 5rem !important;
+
+}
+
+.card{
+    margin-left: 10px;
+    margin-right: 10px;
+    flex: 1;
+}
+.home-banner>div{
+    background: rgb(195,202,212);
+    background: linear-gradient(96deg, rgba(195,202,212,1) 0%, rgba(155,193,226,1) 44%, rgba(105,128,133,) 100%);
+    /* background-image: url(../images/4138062.jpg); */
+    background-size: cover;
+    padding: 3.5rem !important;
+    background-repeat: no-repeat;
+    padding-top: 5rem !important;
+
+
+}
+
+.hero{
+    background-color: transparent;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    float: right;
+
+}
+
+div.firstexp{
+    position: relative;
+    right: 20%;
+    
+}
+div.secexp{
+    
+    position: relative;
+    left: 20%;
+
+}
+div.thirdexp{
+    position: relative;
+    right: 20%;
+
+}
+
+@media (max-width: 756px)  {
+
+    .firstexp, .secexp, .thirdexp{
+        position: static;
+    }
+    
+}
+
+
+.slick-arrow:before, .slick-arrow:after {
+    background-color: #000000;
+    border-radius: 50%;
+    padding: 3px;
+    color: dimgray;
+    font-size: xx-large;
+    
+    
+
+
+}
+
+.slick-list{
+    margin:auto;
+}
+
+
+.skills img{
+   width: 80%;
+   height: 80%;
+   padding: 10%;
+   
+
+
+}
+
+.skills div.badge{
+    width: 110px;
+    height: 110px;
+    min-width: 50px !important;
+    border: 50%;
+}
+
+.skills p{
+   margin: 10px;
+    
+    /* background: linear-gradient(90deg, blue ,red ); */
+}
+
+
+/******************* Experience timeline ******************/
+.timeline{
+    position: relative;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.timeline::after{
+    content: '';
+    position: absolute;
+    width: 5px;
+    background-color: #0d6efd;
+    height: 100%;
+    top: 0px;
+    bottom: 0px;
+    margin-left: 50%;
+    border-radius: 50rem;
+    
+}
+
+.timeline-card-container.left{
+    position: relative;
+    left: -50%;
+
+}
+
+.timeline-card-container.right{
+    position: relative;
+    right: -50%;
+
+}
+
+.timeline-card-container.left::before, .timeline-card-container.right::before{
+    content: "";
+    background-color: thistle;
+    width: 50px;
+    height: 50px;
+    border: 2px solid #0d6efd;
+    border-radius: 50rem;
+    display: flex;
+    justify-content: center;
+    position: relative;
+}
+
+.timeline-card-container.left::before{
+    margin-left: auto;
+    top: 30px;
+}
+
+.timeline-card-container.right::before{
+    margin-right: auto;
+    top: 30px;
+}
+/*******************End of experience timeline ******************/
