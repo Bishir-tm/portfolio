@@ -50,12 +50,6 @@ $gradient-bottom-left: linear-gradient(315deg, #cfbcdfff, #b8a3abff, #040926ff, 
 $gradient-radial: radial-gradient(#cfbcdfff, #b8a3abff, #040926ff, #7d93f2ff);
 */
 
-body{
-    background: #e4f5f5;  /* fallback for old browsers */
-    /* background: -webkit-linear-gradient(to right, #bde7ea, #F7F8F8);  Chrome 10-25, Safari 5.1-6 */
-    /* background: linear-gradient(to right, #bde7ea, #F7F8F8); W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-    
-}
 
 
 /* header{
@@ -106,19 +100,26 @@ a.nav-link{
             linear-gradient(#ffffff, #ffffff) 50% 50%/calc(100% - 10px) calc(100% - 60px) no-repeat,
             linear-gradient(#ffffff, #ffffff) 50% 50%/calc(100% - 60px) calc(100% - 10px) no-repeat,
             linear-gradient(52deg, #ff0505 0%, #000488 100%);
-    border-radius: 30px;
-    padding: 35px;
-    box-sizing: content-box;
+            border-radius: 30px;
+            padding: 35px;
+            box-sizing: content-box;
+            
+        }
+        
+        .rainbow-text{
+            background: #0D168C;
+            background: repeating-linear-gradient(to bottom left, #0D168C 0%, #B31210 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+        
 
+a{
+    text-decoration: none;
+    color: #0d6efd;
+    font-weight: 600;
+    font-size: large;
 }
-
-.rainbow-text{
-    background: #0D168C;
-    background: repeating-linear-gradient(to bottom left, #0D168C 0%, #B31210 100%);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-}
-
 a.nav-link:hover{
     color: #8c8282;
     text-decoration-line: underline;
@@ -141,52 +142,6 @@ a.nav-link:hover{
     margin-right: 10px;
     flex: 1;
 }
-.home-banner>div{
-    background: rgb(195,202,212);
-    background: linear-gradient(96deg, rgba(195,202,212,1) 0%, rgba(155,193,226,1) 44%, rgba(105,128,133,) 100%);
-    /* background-image: url(../images/4138062.jpg); */
-    background-size: cover;
-    padding: 3.5rem !important;
-    background-repeat: no-repeat;
-    padding-top: 5rem !important;
-
-
-}
-
-.hero{
-    background-color: transparent;
-    background-position: center;
-    background-size: cover;
-    background-repeat: no-repeat;
-    float: right;
-
-}
-
-div.firstexp{
-    position: relative;
-    right: 20%;
-    
-}
-div.secexp{
-    
-    position: relative;
-    left: 20%;
-
-}
-div.thirdexp{
-    position: relative;
-    right: 20%;
-
-}
-
-@media (max-width: 756px)  {
-
-    .firstexp, .secexp, .thirdexp{
-        position: static;
-    }
-    
-}
-
 
 .slick-prev.slick-arrow:before, .slick-next.slick-arrow:before {
     position: relative;
@@ -199,20 +154,25 @@ div.thirdexp{
 .slick-prev.slick-arrow:before{
     position: relative;
     left: 30px;
+
     
 }
 .slick-next.slick-arrow:before{
     position: relative;
     right: 50px;
+    z-index: 5001;
 }
 
-
-
+ul.slick-dots button::before{
+    font-size: x-large;
+    width: 35px;
+    height: 35px;
+    color:#7577b3 !important;
+}
 
 .slick-list{
     margin:auto;
 }
-
 
 .skills img{
    width: 80%;

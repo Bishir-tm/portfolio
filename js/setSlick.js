@@ -3,7 +3,7 @@
 $(document).ready(function(){
     $('.portfolio-Projects-Carousel').slick({
         centerMode: true,
-        centerPadding: '60px',
+        centerPadding: '35px',
         dots:true,
         infinite: true,
         speed: 50,
@@ -23,17 +23,17 @@ $(document).ready(function(){
             settings: {
                 arrows: true,
                 centerMode: true,
-                centerPadding: '40px',
+                centerPadding: '20px',
                 slidesToShow: 3
             }
             },
             {
             breakpoint: 480,
             settings: {
-                arrows: true,
+                arrows: false,
                 centerMode: true,
-                centerPadding: '40px',
-                slidesToShow: 3
+                centerPadding: '20px',
+                slidesToShow: 1
             }
             }
         ]

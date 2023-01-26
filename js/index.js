@@ -11,3 +11,11 @@ speaker.addEventListener("click",function() {
     }
 });
 
+const text = document.querySelector(".typing-text");
+const textArray = text.textContent.split("");
+text.innerHTML = "";
+textArray.forEach((letter, i) => {
+  setTimeout(() => {
+    text.innerHTML += letter;
+  }, 75 * i);
+});

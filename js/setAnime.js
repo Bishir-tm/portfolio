@@ -1,4 +1,4 @@
-anime({
+// anime({
     // targets: ".slideFromLeft",
     // duration: 3000,
     // keyframes:[ 
@@ -14,4 +14,10 @@ anime({
 
 
 
-});
+// });
+anime({
+    targets: ".lead",
+    translateX: ['-100%', '0%'],
+    duration: 2000,
+    easing: 'easeInOutQuad'
+  });
