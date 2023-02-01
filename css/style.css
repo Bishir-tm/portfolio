@@ -1,86 +1,126 @@
+@font-face{
+    font-family: Fredoka;
+    src: url(../Fredoka.ttf);
+    font-size: large;
+}
+
+
+
+
+
+@font-face{
+    font-family: UbuntuMono-Regular;
+    src: url(../UbuntuMono-Regular.ttf);
+    font-size: large;
+}
+
 *{
     margin: 0;
     border: 0;
     padding: 0;
+    font-family: UbuntuMono-Regular;
+    font-size: large;
+    
+}
+
+.bg-primary{
+    background-color: orangered !important;
+}
+.btn-primary{
+    background-color: orangered;
+    border: 0;
+}
+.btn-primary:hover{
+    background-color: rgb(208, 71, 22);
+}
+.btn-outline-primary{
+    background-color: transparent;
+    border: 2px solid orangered;
+    color: orangered;
+}
+.btn-outline-primary:hover{
+    background-color: orangered;
+    color: white;
+    border-color: #ff0505;
+}
+
+.text-primary{
+    color: orangered !important;
+}
+.border-primary{
+    border-color: orangered !important;
+}
+
+p,label,b,div,details,summary{
+    font-family: Fredoka !important;
+}
+
+h1,h2,h3,h4,h5,h6{
+    font-weight: lighter !important;
+    
+}
+
+header{
+    z-index: 5000;
+    /* padding: 5px; */
+}
+
+nav{
+    right: 0;
+    background-color: #040926db;
+    backdrop-filter: blur(7px);
+    /* padding: 15px; */
+    border-radius: 1.7rem;
+    -webkit-backdrop-filter: blur(7px);
+    
 }
 
 .bg-oxford{
-    background-color: #040926ff;
+    background-color: rgb(0, 14, 92);
 }
 
 .text-oxford{
     color: #040926ff;
 }
 
-.bg-thisle{
-    background-color: rgb(220, 207, 220);
-}
-
-.text-thisle{
-    color: thistle;
-}
 
 .btn-outline-primary>*a:hover{
     color:white;
 }
 
-/* 
- CSS HEX
---thistle: #cfbcdfff;
---black-shadows: #b8a3abff;
---oxford-blue: #040926ff;
---cornflower-blue: #7d93f2ff;
-
-CSS HSL
---thistle: hsla(273, 35%, 81%, 1);
---black-shadows: hsla(337, 13%, 68%, 1);
---oxford-blue: hsla(231, 81%, 8%, 1);
---cornflower-blue: hsla(229, 82%, 72%, 1);
-
-
-SCSS Gradient 
-$gradient-top: linear-gradient(0deg, #cfbcdfff, #b8a3abff, #040926ff, #7d93f2ff);
-$gradient-right: linear-gradient(90deg, #cfbcdfff, #b8a3abff, #040926ff, #7d93f2ff);
-$gradient-bottom: linear-gradient(180deg, #cfbcdfff, #b8a3abff, #040926ff, #7d93f2ff);
-$gradient-left: linear-gradient(270deg, #cfbcdfff, #b8a3abff, #040926ff, #7d93f2ff);
-$gradient-top-right: linear-gradient(45deg, #cfbcdfff, #b8a3abff, #040926ff, #7d93f2ff);
-$gradient-bottom-right: linear-gradient(135deg, #cfbcdfff, #b8a3abff, #040926ff, #7d93f2ff);
-$gradient-top-left: linear-gradient(225deg, #cfbcdfff, #b8a3abff, #040926ff, #7d93f2ff);
-$gradient-bottom-left: linear-gradient(315deg, #cfbcdfff, #b8a3abff, #040926ff, #7d93f2ff);
-$gradient-radial: radial-gradient(#cfbcdfff, #b8a3abff, #040926ff, #7d93f2ff);
-*/
-
-
-
-/* header{
-    position: sticky;
-    top: 0;
-    background: linear-gradient(52deg, rgba(253, 152, 152, 0.2) 0%, rgba(0,18,179,1) 11%, rgba(0,52,129,0.2) 32%, rgba(213,1,1,0.2) 53%, rgba(5,39,74,1) 81%, rgba(0,0,0,0.2) 99%);
-    backdrop-filter: blur(7px);
-    z-index: 5000;
-} */
-
-/* @media (max-width: 992px) {
-    .navbar-collapse{
-        background: linear-gradient(52deg, rgba(0,0,0,0.2) 0%, rgba(0,18,179,1) 11%, rgba(0,52,129,0.2) 32%, rgba(213,1,1,0.2) 53%, rgba(5,39,74,1) 81%, rgba(0,0,0,0.2) 99%);        backdrop-filter: blur(7px);
-        padding: 19px ;
-        position: fixed;
-        right: 0px;
-        top:auto;
-        border-bottom-left-radius: 50px;
-        font-weight: bolder;
-        z-index: 4000;
-        height: 50vh;
-        width: 30%;
-    }
-    
-} */
-
-
-
 a.nav-link{
-    color: white;
+    color: orangered;
+    padding: 1rem;
+    border-radius: 20px;
+    
 }
+a.nav-link:hover{
+    color: white;
+    background-color: orangered;
+}
+
+.navbar-collapse{
+    display: flex;
+    justify-content: center;
+}
+
+.navbar-collapse.show{
+    margin-bottom: 30px;
+    padding-left: 10px !important;
+    padding-right: 10px !important;
+}
+
+.navbar-toggler{
+ font-size: xx-large;
+ color: orangered;
+}
+
+
+
+.navbar-toggler-icon{
+    margin: 0;
+}
+
 
 .has-raduis{
     border-radius: 50px ;
@@ -100,32 +140,26 @@ a.nav-link{
             linear-gradient(#ffffff, #ffffff) 50% 50%/calc(100% - 10px) calc(100% - 60px) no-repeat,
             linear-gradient(#ffffff, #ffffff) 50% 50%/calc(100% - 60px) calc(100% - 10px) no-repeat,
             linear-gradient(52deg, #ff0505 0%, #000488 100%);
-            border-radius: 30px;
-            padding: 35px;
-            box-sizing: content-box;
-            
-        }
+    border-radius: 30px;
+    padding: 35px;
+    box-sizing: content-box;            
+}
         
-        .rainbow-text{
-            background: #0D168C;
-            background: repeating-linear-gradient(to bottom left, #0D168C 0%, #B31210 100%);
-            -webkit-background-clip: text;
-            -webkit-text-fill-color: transparent;
-        }
+.rainbow-text{
+    background: #0D168C;
+    background: repeating-linear-gradient(to bottom left, #0D168C 0%, #B31210 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
         
 
-a{
-    text-decoration: none;
-    color: #0d6efd;
-    font-weight: 600;
-    font-size: large;
-}
-a.nav-link:hover{
-    color: #8c8282;
-    text-decoration-line: underline;
-    transition: 2.5s;
-    
-}
+    a{
+        text-decoration: none;
+        color: orangered;
+        font-weight: 600;
+        font-size: large;
+    }
+
 
 .home-banner{
     background: rgb(0,0,0);
@@ -143,9 +177,13 @@ a.nav-link:hover{
     flex: 1;
 }
 
+.slick-prev{
+    z-index: 1;
+}
+
 .slick-prev.slick-arrow:before, .slick-next.slick-arrow:before {
     position: relative;
-    background-color: #2e1fd5;
+    background-color: orangered;
     border-radius: 50%;
     padding: 3px;
     color: rgb(237, 227, 227);
@@ -167,7 +205,7 @@ ul.slick-dots button::before{
     font-size: x-large;
     width: 35px;
     height: 35px;
-    color:#7577b3 !important;
+    color: orangered !important;
 }
 
 .slick-list{
@@ -208,7 +246,7 @@ ul.slick-dots button::before{
     content: '';
     position: absolute;
     width: 5px;
-    background-color: #0d6efd;
+    background-color: orangered;
     height: 100%;
     top: 0px;
     bottom: 0px;
@@ -231,7 +269,7 @@ ul.slick-dots button::before{
 
 .timeline-card-container.left::before, .timeline-card-container.right::before{
     content: "";
-    background-color: #0d6efd;
+    background-color: orangered;
     width: 50px;
     height: 20px;
     display: flex;
@@ -259,7 +297,7 @@ ul.slick-dots button::before{
     }
     .timeline-card-container.left::before{
         content: "";
-        background-color: #0d6efd;
+        background-color: orangered;
         width: 50px;
         height: 20px;
         display: flex;
@@ -277,4 +315,21 @@ ul.slick-dots button::before{
 footer{
     border-top-left-radius: 50px ;
     border-top-right-radius: 50px ;
+
+}
+
+
+
+footer a{
+    text-decoration: underline !important;
+    text-decoration-style: dotted;
+}
+
+footer a:hover{
+    text-decoration: underline !important;
+    color: rgb(255, 132, 0);
+}
+
+footer .btn{
+    margin: 0.5rem !important;
 }

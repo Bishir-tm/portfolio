@@ -14,12 +14,20 @@
     />
     <link rel="stylesheet" href="./css/style.css" />
   </head>
-  <body class="bg-da">
-    <header>
-      <nav class="navbar navbar-expand-lg navbar-dark bg-oxford">
-        <a class="navbar-brand" href="#">Your Name</a>
+
+  <body class="">
+    <!-- <a class="navbar-brand px-3 bg-light btn has-raduis pt-2" href="#"
+      ><img src="./images/bishirTijjani-logo.svg" alt=""
+    /></a> -->
+    <header
+      class="p-2 w-100 position-fixed top-0 d-flex justify-content-between"
+    >
+      <nav
+        class="slideFromBottom slideFromTop navbar navbar-expand-lg w-100 me-auto"
+      >
         <button
           class="navbar-toggler"
+          id="navbarToggler"
           type="button"
           data-bs-toggle="collapse"
           data-bs-target="#navbarNav"
@@ -27,23 +35,26 @@
           aria-expanded="false"
           aria-label="Toggle navigation"
         >
-          <span class="navbar-toggler-icon"></span>
+          <span class="navbar-toggler-icon fs-1">&#9776;</span>
         </button>
-        <div class="collapse navbar-collapse" id="navbarNav">
-          <ul class="navbar-nav">
-            <li class="nav-item">
+        <div
+          class="collapse slideFromBottom collapse-horizontal navbar-collapse"
+          id="navbarNav"
+        >
+          <ul class="navbar-nav text-center px-5">
+            <li class="nav-item px-5 basic-staggering-demo">
               <a class="nav-link" href="#about">About</a>
             </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#experience">Experience</a>
-            </li>
-            <li class="nav-item">
+            <li class="nav-item px-5 basic-staggering-demo">
               <a class="nav-link" href="#projects">Projects</a>
             </li>
-            <li class="nav-item">
+            <li class="nav-item px-5 basic-staggering-demo">
               <a class="nav-link" href="#skills">Skills</a>
             </li>
-            <li class="nav-item">
+            <li class="nav-item px-5 basic-staggering-demo">
+              <a class="nav-link" href="#experience">Experience</a>
+            </li>
+            <li class="nav-item px-5 basic-staggering-demo">
               <a class="nav-link" href="#contact">Contact</a>
             </li>
           </ul>
@@ -54,37 +65,39 @@
     <div class="container col-xxl-12 px-4">
       <div class="row g-5 my-5">
         <div class="col-lg-8">
-          <div class="row h-100 flex-lg-row">
-            <div class="col-lg-5 bg-oxford has-raduis p-3">
+          <div class="row flex-lg-row">
+            <div class="col-lg-5 has-raduis px-3 slideFromLeft">
               <img
                 src="./images/Bishir-TM-With-BG.jpeg "
-                class="has-raduis d-block mx-lg-auto img-fluid"
-                width="900"
-                height="700"
+                class="has-raduis d-block mx-lg-auto img-fluid p-3 bg-oxford"
+                width="290"
+                height="355"
               />
             </div>
-            <div class="col-lg-6 text-light mx-lg-3 px-3">
+            <div class="slideFromTop col-lg-6 text-light mx-lg-3 px-3">
               <div class="bg-oxford has-raduis p-4 my-3 my-lg-0">
-                <h1 class="fs-1 fw-bolder m-0 rainbow-text">Hello!</h1>
-                <h4 class="fw-bold lh-1">
+                <h1 class="fs-1 m-0 rainbow-text">Hello!</h1>
+                <h4 class="lh-1">
                   I am Bishir Tijjani
                   <audio id="myNameAudio">
                     <source src="assets/BishirTijjani.mp3" type="audio/mp3" />
                   </audio>
                   <button class="bg-transparent" id="speaker">&#128266;</button>
                 </h4>
-                <p class="fw-bold border-3 border-top w-100">
+                <p class="border-3 border-top w-100">
                   A Frontend Web Developer
                 </p>
               </div>
-              <div class="lead bg-oxford has-raduis p-3 my-3 text-center">
+              <!-- <p
+                class="slideFromLeft bg-oxford has-raduis p-3 my-3 text-center typing-text"
+              >
                 I am a computer science graduate with a passion for frontend web
-                development, quick learner and problem solver. Always eager to
-                take on new challenges and stay current with the latest web
-                development trends.
-              </div>
+                development,and an avid learner and problem solver. I am always
+                eager to take on new challenges and stay current with the latest
+                web development trends.
+              </p> -->
               <div
-                class="btn-group-sm d-flex justify-content-between align-items-csnter bg-oxford has-raduis p-3 my-3"
+                class="btn-group-sm d-flex slideFromRight justify-content-between align-items-csnter bg-oxford has-raduis p-3 my-3"
                 role="group"
               >
                 <button
@@ -103,9 +116,9 @@
             </div>
           </div>
         </div>
-        <div class="col-lg-4">
+        <div class="col-lg-4 slideFromRight">
           <div
-            class="d-flex flex-wrap align-items-center justify-content-center py-4 bg-oxford has-raduis"
+            class="d-flex flex-wrap align-items-center justify-content-center slideFromBottom py-4 bg-oxford has-raduis"
           >
             <a
               class="btn shadow-lg btn-outline-primary rounded-pill m-sm-3 m-1"
@@ -148,6 +161,7 @@
             <a
               class="btn shadow-lg btn-outline-primary rounded-pill m-sm-3 m-1"
               href="#"
+              target="_blank"
             >
               <i class="bi">
                 <svg
@@ -189,33 +203,54 @@
     </div>
 
     <div class="d-flex rainbow-bg align-items-center justify-content-center">
-      <h4 class="fw-bold p-3 text-center text-light">
+      <h4 class="p-3 mx-5 text-center text-light">
         "I believe that a great developer goes beyond coding, to collaborate,
         communicate and solve problems effectively."
       </h4>
     </div>
-    <section class="container m-auto">
+
+    <section class="container m-auto" id="about">
       <div class="m-3">
         <div class="row">
-          <div class="col text-light bg-oxford has-raduis p-4 my-2">
-            <h2 class="mb-3 text-center has-raduis bg-primary">About Me</h2>
-            <p class="lead typing-text" id="">
-              "I am a recent computer science graduate with a passion for
-              frontend web development. My strong foundation in programming
-              concepts, combined with my experience in modern technologies such
-              as HTML, CSS, and JavaScript, and their frameworks and libraries,
-              has allowed me to create visually stunning and responsive web
-              pages that provide a seamless user experience. My attention to
-              detail and ability to think creatively has resulted in
-              high-quality web applications that exceed client expectations.
-            </p>
-            <p class="fs-5 fw-light my-2 typing-text">
-              In addition to my technical skills, I am a quick learner and
-              problem solver, always eager to take on new challenges and stay
-              current with the latest web development trends. My ability to work
-              efficiently and effectively on both individual and team projects
-              makes me a valuable asset to any organization. I would be excited
-              to bring my creativity to your team."
+          <div
+            class="col text-light slideFromLeft bg-oxford has-raduis p-4 my-2"
+          >
+            <h3 class="text-center text-light m-3 bg-primary p-3 has-raduis">
+              About Me
+            </h3>
+            <p class="lead slideFromTop" id="">
+              <!-- "I am a recent computer science graduate with a passion for
+              frontend web development -->
+              I am a computer science graduate with a passion for frontend web
+              development,and an avid learner and problem solver. I am always
+              eager to take on new challenges and stay current with the latest
+              web development trends.
+              <br />
+              <details class="fs-5 fw-light">
+                <summary>
+                  <b class="text-primary p-2">The Long Version</b>
+                </summary>
+
+                My strong foundation in programming concepts, combined with my
+                experience in modern technologies such as HTML, CSS, and
+                JavaScript, and their frameworks and libraries, has allowed me
+                to create visually stunning and responsive web pages that
+                provide a seamless user experience. My attention to detail and
+                ability to think creatively has resulted in high-quality web
+                applications that exceed client expectations.
+                <br />
+                In addition to my technical skills, I am a quick learner and
+                problem solver, always eager to take on new challenges and stay
+                current with the latest web development trends. My ability to
+                work efficiently and effectively on both individual and team
+                projects makes me a valuable asset to any organization. I would
+                be excited to bring my creativity to your team."
+              </details>
+              <button
+                class="ms-auto btn btn-sm btn-outline-primary rounded-pill"
+              >
+                Contact Me
+              </button>
             </p>
           </div>
           <!-- <div class="col-lg-4 bg-oxford has-raduis p-4">
@@ -229,14 +264,15 @@
       </div>
     </section>
     <section class="container m-auto">
-      <div class="container w-100 m-auto bg-oxford has-raduis py-4">
-        <h3
-          class="fw-bolder text-center text-light m-3 bg-primary p-3 has-raduis"
-        >
+      <div
+        class="container w-100 m-auto bg-oxford has-raduis py-4 mb-5"
+        id="projects"
+      >
+        <h3 class="text-center text-light m-3 bg-primary p-3 has-raduis">
           Recent Projects
         </h3>
         <div class="portfolio-Projects-Carousel mb-5">
-          <div class="card m-3 p-3 bg-dark has-raduis" style="width: 25rem">
+          <div class="card m-3 p-3 bg-dark has-raduis" style="width: 19rem">
             <img
               src="./images/4138062.jpg"
               class="card-img my-lg-3"
@@ -244,7 +280,7 @@
               alt="..."
             />
             <div class="card-body">
-              <h5 class="card-title text-center text-white">Card title</h5>
+              <h5 class="card-title text-center text-primary">Card title</h5>
               <p class="card-text text-light">
                 Some quick example text to build on the card title and make up
                 the bulk of the card's content. Some quick example text to build
@@ -256,12 +292,12 @@
               <div class="btn-group-sm d-flex justify-content-between">
                 <a href="#" class="btn btn-light rounded-pill">Learn More</a>
                 <a href="#" class="btn btn-outline-light rounded-pill"
-                  >Go to Project</a
+                  >Live Demo</a
                 >
               </div>
             </div>
           </div>
-          <div class="card m-3 p-3 bg-dark has-raduis" style="width: 25rem">
+          <div class="card m-3 p-3 bg-dark has-raduis" style="width: 19rem">
             <img
               src="./images/whatsapp.jpg"
               class="card-img my-lg-3"
@@ -269,7 +305,7 @@
               alt="..."
             />
             <div class="card-body">
-              <h5 class="card-title text-center text-white">Card title</h5>
+              <h5 class="card-title text-center text-primary">Card title</h5>
               <p class="card-text text-light">
                 Some quick example text to build on the card title and make up
                 the bulk of the card's content. Some quick example text to build
@@ -281,12 +317,12 @@
               <div class="btn-group-sm d-flex justify-content-between">
                 <a href="#" class="btn btn-light rounded-pill">Learn More</a>
                 <a href="#" class="btn btn-outline-light rounded-pill"
-                  >Go to Project</a
+                  >Live Demo</a
                 >
               </div>
             </div>
           </div>
-          <div class="card m-3 p-3 bg-dark has-raduis" style="width: 25rem">
+          <div class="card m-3 p-3 bg-dark has-raduis" style="width: 19rem">
             <img
               src="./images/4138062.jpg"
               class="card-img my-lg-3"
@@ -294,7 +330,7 @@
               alt="..."
             />
             <div class="card-body">
-              <h5 class="card-title text-center text-white">Card title</h5>
+              <h5 class="card-title text-center text-primary">Card title</h5>
               <p class="card-text text-light">
                 Some quick example text to build on the card title and make up
                 the bulk of the card's content. Some quick example text to build
@@ -306,12 +342,12 @@
               <div class="btn-group-sm d-flex justify-content-between">
                 <a href="#" class="btn btn-light rounded-pill">Learn More</a>
                 <a href="#" class="btn btn-outline-light rounded-pill"
-                  >Go to Project</a
+                  >Live Demo</a
                 >
               </div>
             </div>
           </div>
-          <div class="card m-3 p-3 bg-dark has-raduis" style="width: 25rem">
+          <div class="card m-3 p-3 bg-dark has-raduis" style="width: 19rem">
             <img
               src="./images/whatsapp.jpg"
               class="card-img my-lg-3"
@@ -319,7 +355,7 @@
               alt="..."
             />
             <div class="card-body">
-              <h5 class="card-title text-center text-white">Card title</h5>
+              <h5 class="card-title text-center text-primary">Card title</h5>
               <p class="card-text text-light">
                 Some quick example text to build on the card title and make up
                 the bulk of the card's content. Some quick example text to build
@@ -331,12 +367,12 @@
               <div class="btn-group-sm d-flex justify-content-between">
                 <a href="#" class="btn btn-light rounded-pill">Learn More</a>
                 <a href="#" class="btn btn-outline-light rounded-pill"
-                  >Go to Project</a
+                  >Live Demo</a
                 >
               </div>
             </div>
           </div>
-          <div class="card m-3 p-3 bg-dark has-raduis" style="width: 25rem">
+          <div class="card m-3 p-3 bg-dark has-raduis" style="width: 19rem">
             <img
               src="./images/4138062.jpg"
               class="card-img my-lg-3"
@@ -344,7 +380,7 @@
               alt="..."
             />
             <div class="card-body">
-              <h5 class="card-title text-center text-white">Card title</h5>
+              <h5 class="card-title text-center text-primary">Card title</h5>
               <p class="card-text text-light">
                 Some quick example text to build on the card title and make up
                 the bulk of the card's content. Some quick example text to build
@@ -356,12 +392,12 @@
               <div class="btn-group-sm d-flex justify-content-between">
                 <a href="#" class="btn btn-light rounded-pill">Learn More</a>
                 <a href="#" class="btn btn-outline-light rounded-pill"
-                  >Go to Project</a
+                  >Live Demo</a
                 >
               </div>
             </div>
           </div>
-          <div class="card m-3 p-3 bg-dark has-raduis" style="width: 25rem">
+          <div class="card m-3 p-3 bg-dark has-raduis" style="width: 19rem">
             <img
               src="./images/whatsapp.jpg"
               class="card-img my-lg-3"
@@ -369,7 +405,7 @@
               alt="..."
             />
             <div class="card-body">
-              <h5 class="card-title text-center text-white">Card title</h5>
+              <h5 class="card-title text-center text-primary">Card title</h5>
               <p class="card-text text-light">
                 Some quick example text to build on the card title and make up
                 the bulk of the card's content. Some quick example text to build
@@ -381,7 +417,7 @@
               <div class="btn-group-sm d-flex justify-content-between">
                 <a href="#" class="btn btn-light rounded-pill">Learn More</a>
                 <a href="#" class="btn btn-outline-light rounded-pill"
-                  >Go to Project</a
+                  >Live Demo</a
                 >
               </div>
             </div>
@@ -389,13 +425,12 @@
         </div>
       </div>
     </section>
-    <section class="container d-flex flex-wrap flex-column skills m-auto">
+    <section class="container mb-5">
       <div
-        class="d-flex flex-column align-items-center bg-oxford has-raduis my-5"
+        id="skills"
+        class="d-flex flex-wrap flex-column border-top skills bg-oxford has-raduis m-auto py-5 pt-3"
       >
-        <h3
-          class="fw-bolder text-center text-light my-5 bg-primary p-3 has-raduis"
-        >
+        <h3 class="text-center text-light m-5 bg-primary p-3 has-raduis">
           Skills
         </h3>
         <div class="d-flex align-items-center flex-wrap justify-content-center">
@@ -405,56 +440,72 @@
             data-bs-placement="left"
             title="HTML-5 professional"
           >
-            <div class="badge p-lg-4 p-sm-2 rounded-circle bg-light">
+            <div
+              class="badge p-lg-4 p-sm-2 rounded-circle bg-light border border-3 border-primary"
+            >
               <img src="./images/logo-html5.svg" class="" />
             </div>
             <p class="text-light text-center">HTML</p>
           </div>
           <div class="m-2 m-lg-5">
-            <div class="badge p-lg-4 p-sm-2 rounded-circle bg-light">
+            <div
+              class="badge p-lg-4 p-sm-2 rounded-circle bg-light border border-3 border-primary"
+            >
               <img src="./images/logo-css3.svg" class="" />
             </div>
             <p class="text-light text-center">css</p>
           </div>
           <div class="m-2 m-lg-5">
-            <div class="badge p-lg-4 p-sm-2 rounded-circle bg-light">
+            <div
+              class="badge p-lg-4 p-sm-2 rounded-circle bg-light border border-3 border-primary"
+            >
               <img src="./images/logo-javascript.svg" class="" />
             </div>
             <p class="text-light text-center">JavaScript</p>
           </div>
           <div class="m-2 m-lg-5">
-            <div class="badge p-lg-4 p-sm-2 rounded-circle bg-light">
+            <div
+              class="badge p-lg-4 p-sm-2 rounded-circle bg-light border border-3 border-primary"
+            >
               <img src="./images/logo-react.svg" class="" />
             </div>
             <p class="text-light text-center">React</p>
           </div>
           <div class="m-2 m-lg-5">
-            <div class="badge p-lg-4 p-sm-2 rounded-circle bg-light">
+            <div
+              class="badge p-lg-4 p-sm-2 rounded-circle bg-light border border-3 border-primary"
+            >
               <img src="./images/logo-nodejs.svg" class="" />
             </div>
             <p class="text-light text-center">NodeJS</p>
           </div>
           <div class="m-2 m-lg-5">
-            <div class="badge p-lg-4 p-sm-2 rounded-circle bg-light">
+            <div
+              class="badge p-lg-4 p-sm-2 rounded-circle bg-light border border-3 border-primary"
+            >
               <img src="./images/logo-sass.svg" class="" />
             </div>
             <p class="text-light text-center">sass</p>
           </div>
           <div class="m-2 m-lg-5">
-            <div class="badge p-lg-4 p-sm-2 rounded-circle bg-light">
+            <div
+              class="badge p-lg-4 p-sm-2 rounded-circle bg-light border border-3 border-primary"
+            >
               <img src="./images/bootstrap.svg" class="" />
             </div>
             <p class="text-light text-center">Bootstrap</p>
           </div>
           <div class="m-2 m-lg-5">
-            <div class="badge p-lg-4 p-sm-2 rounded-circle bg-light">
+            <div
+              class="badge p-lg-4 p-sm-2 rounded-circle bg-light border border-3 border-primary"
+            >
               <img src="./images/git.svg" class="" />
             </div>
             <p class="text-light text-center">Git</p>
           </div>
           <div class="m-2 m-lg-5">
             <div
-              class="badge p-lg-4 p-sm-2 rounded-circle bg-light text-center"
+              class="badge p-lg-4 p-sm-2 rounded-circle bg-light border border-3 border-primary text-center"
             >
               <svg
                 xmlns="http://www.w3.org/2000/svg"
@@ -470,7 +521,9 @@
             <p class="text-light text-center">PHP</p>
           </div>
           <div class="m-2 m-lg-5">
-            <div class="badge p-lg-4 p-sm-2 rounded-circle bg-light">
+            <div
+              class="badge p-lg-4 p-sm-2 rounded-circle bg-light border border-3 border-primary"
+            >
               <img src="./images/logo-github.svg" class="" />
             </div>
             <p class="text-light text-center">Github</p>
@@ -481,11 +534,10 @@
     </section>
     <section class="container mb-5">
       <div
-        class="d-flex flex-wrap flex-column border-top skills bg-oxford has-raduis m-auto py-5"
+        id="experience"
+        class="d-flex flex-wrap flex-column border-top skills bg-oxford has-raduis m-auto py-5 pt-3"
       >
-        <h3
-          class="fw-bolder text-center text-light m-5 bg-primary p-3 has-raduis"
-        >
+        <h3 class="text-center text-light m-5 bg-primary p-3 has-raduis">
           Experience
         </h3>
         <div class="timeline">
@@ -546,13 +598,58 @@
         </div>
       </div>
     </section>
-    <footer class="bg-oxford p-4">
-      <div id="foot" class="container-fluid rounded-pill mb-5">
+    <section class="container mb-5 text-white" id="contact">
+      <div
+        id=""
+        class="d-flex flex-wrap flex-column border-top skills bg-oxford has-raduis m-auto py-5 pt-3"
+      >
+        <h3 class="text-center text-light m-5 bg-primary p-3 has-raduis">
+          Contact Me
+        </h3>
+        <form class="row g-3 mx-5 px-3">
+          <div class="col-md-6">
+            <label for="" class="form-label">Email:</label>
+            <input
+              type="email"
+              class="rounded-pill form-control form-control-lg"
+              id="inputEmail4"
+              placeholder="email.."
+            />
+          </div>
+          <div class="col-md-6">
+            <label for="inputPassword4" class="form-label">Password:</label>
+            <input
+              type="password"
+              class="rounded-pill form-control form-control-lg"
+              id="inputPassword4"
+              placeholder="password..."
+            />
+          </div>
+          <div class="row">
+            <label for="" class="mt-5 form-label">Your Message:</label>
+          </div>
+          <textarea
+            name=""
+            id=""
+            cols="30"
+            rows="4"
+            class="rounded-3 p-3"
+          ></textarea>
+          <input
+            type="submit"
+            class="rounded-pill btn-sm col-3 btn btn-primary ms-auto"
+            value="submit"
+          />
+        </form>
+      </div>
+    </section>
+    <footer class="container bg-oxford p-4 m-auto">
+      <div id="foot" class="rounded-pill mb-5">
         <div class="d-flex flex-wrap justify-content-between p-3 py-2">
           <dv class="row">
             <ul class="nav col-12 justify-content-end list-unstyled d-flex">
               <li>
-                <a class="btn btn-outline-light rounded-pill" href="#">
+                <a class="btn btn-outline-primary rounded-pill" href="#">
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
                     width="25"
@@ -568,7 +665,7 @@
                 </a>
               </li>
               <li>
-                <a class="btn btn-outline-light rounded-pill" href="#">
+                <a class="btn btn-outline-primary rounded-pill" href="#">
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
                     width="25"
@@ -584,7 +681,7 @@
                 </a>
               </li>
               <li>
-                <a class="btn btn-outline-light rounded-pill" href="#">
+                <a class="btn btn-outline-primary rounded-pill" href="#">
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
                     width="25"
@@ -602,10 +699,10 @@
             </ul>
           </dv>
 
-          <button class="btn btn-lg btn-outline-light rounded-pill">
+          <button class="btn btn-lg btn-outline-primary rounded-pill">
             View Resume
           </button>
-          <button class="btn btn-lg btn-outline-light rounded-pill">
+          <button class="btn btn-lg btn-outline-primary rounded-pill">
             Contact Me
           </button>
         </div>
@@ -618,13 +715,15 @@
             <ul class="list-unstyled text-secondary">
               <li>
                 Email:
-                <a href="mailto:bitmo24@gmail.com">Email Me</a>
+                <a href="mailto:bitmo24@gmail.com"
+                  >BishirTijjani247@gmail.com</a
+                >
               </li>
-              <li>Phone: +1 (555) 555-5555</li>
+              <li>Phone: +2349068149540</li>
               <li>
                 LinkedIn:
-                <a href="https://www.linkedin.com/in/yourusername"
-                  >https://www.linkedin.com/in/yourusername</a
+                <a href="https://www.linkedin.com/in/bishirtm"
+                  >https://www.linkedin.com/in/bishirtm</a
                 >
               </li>
             </ul>
@@ -632,7 +731,7 @@
           <div class="col-12 col-md-6">
             <h5 class="text-muted">Other Projects</h5>
             <ul class="list-unstyled">
-              <li><a href="#">Proje ct 1</a></li>
+              <li><a href="#">Project 1</a></li>
               <li><a href="#">Project 2</a></li>
               <li><a href="#">Project 3</a></li>
             </ul>
@@ -640,7 +739,7 @@
         </div>
         <div class="row">
           <div class="col-12">
-            <p class="text-center fw-bold text-secondary">
+            <p class="text-center text-secondary">
               Copyright &copy;
               <script>
                 document.write(new Date().getFullYear());
@@ -661,13 +760,9 @@
     ></script>
     <script type="text/javascript" src="./js/setAnime.js"></script>
     <script type="text/javascript" src="./js/index.js"></script>
-    <script
-      type="text/javascript"
-      src="./assets/bootstrap5/js/bootstrap.bundle.min.js"
-    ></script>
   </body>
   <script
     type="text/javascript"
-    src="./assets/bootstrap5/js/bootstrap.min.js"
+    src="./assets/bootstrap5/js/bootstrap.bundle.min.js"
   ></script>
 </html>
