@@ -1,7 +1,7 @@
 
 // slick home carousel
 $(document).ready(function(){
-    $('.portfolio-Projects-Carousel').slick({
+    $('.portfolio-projects-carousel').slick({
         centerMode: true,
         centerPadding: '35px',
         dots:true,
