@@ -51,7 +51,7 @@
     border-color: orangered !important;
 }
 
-p,label,b,div,details,summary{
+p,label,b,div,details,summary,span{
     font-family: Fredoka !important;
 }
 
@@ -123,13 +123,19 @@ a.nav-link:hover{
 
 
 .has-raduis{
-    border-radius: 50px ;
+    border-radius: 50px !important;
 }
 .rainbow-bg{
     /* background: linear-gradient(96deg, rgba(0,6,59,1) 1%, rgba(24,50,88,1) 36%, rgb(65, 10, 62) 71%, rgb(68, 28, 146) 100%); */
     background: linear-gradient(96deg, rgba(0,6,59,1) 1%, rgba(24,50,88,1) 36%, rgb(24,50,88,1) 71%, rgb(0,6,59,1) 100%);
 
 
+}
+
+li::marker{
+    color: orangered;
+    font-size: xx-large;
+    margin-top: -40px;
 }
 
 .rainbow-border{
@@ -144,7 +150,10 @@ a.nav-link:hover{
     padding: 35px;
     box-sizing: content-box;            
 }
-        
+
+.animated{
+    animation: up-down 2s ease-in-out infinite alternate-reverse both;
+}    
 .rainbow-text{
     background: #0D168C;
     background: repeating-linear-gradient(to bottom left, #0D168C 0%, #B31210 100%);
@@ -153,12 +162,12 @@ a.nav-link:hover{
 }
         
 
-    a{
-        text-decoration: none;
-        color: orangered;
-        font-weight: 600;
-        font-size: large;
-    }
+a{
+    text-decoration: none;
+    color: orangered;
+    font-weight: 600;
+    font-size: larger;
+}
 
 
 .home-banner{
@@ -175,6 +184,19 @@ a.nav-link:hover{
     margin-left: 10px;
     margin-right: 10px;
     flex: 1;
+}
+
+.portfolio-projects-carousel h5{
+    position: relative;
+    top: -65px;
+    padding: 15px;
+    border-radius: 3.5rem;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: fit-content;
+
 }
 
 .slick-prev{
@@ -304,10 +326,12 @@ ul.slick-dots button::before{
         justify-content: center;
         position: relative;
         top: 50px;
-        margin-left: 0 ;
+        margin-left: 0;
     }
    
-    
+    .card{
+        max-width: 19rem;
+    }
 }
 /*******************End of experience timeline ******************/
 
