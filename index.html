@@ -100,18 +100,12 @@
                 class="btn-group-sm d-flex slideFromRight justify-content-between align-items-csnter bg-oxford has-raduis p-3 my-3"
                 role="group"
               >
-                <button
-                  type="button "
-                  class="w-100 btn m-2 rounded-pill btn-primary"
-                >
+                <a href="assets/resume01.pdf" target="_blank" class="w-100 btn m-2 rounded-pill btn-primary">
                   View Resume
-                </button>
-                <button
-                  type="button"
-                  class="w-100 btn m-2 rounded-pill btn-outline-primary"
-                >
+                </a>
+                <a href="#contact" class="w-100 btn m-2 rounded-pill btn-outline-primary" rel="noopener noreferrer">
                   Contact Me
-                </button>
+                </a>
               </div>
             </div>
           </div>
@@ -120,9 +114,9 @@
           <div
             class="d-flex flex-wrap align-items-center justify-content-center slideFromBottom py-4 bg-oxford has-raduis"
           >
-            <a
+            <a target="_blank"
               class="btn shadow-lg btn-outline-primary rounded-pill m-sm-3 m-1"
-              href="#"
+              href="https://www.linkedin.com/in/bishir-tijjani-b1894726a"
             >
               <i class="bi">
                 <svg
@@ -139,9 +133,9 @@
                 </svg>
               </i>
             </a>
-            <a
+            <a target="_blank"
               class="btn shadow-lg btn-outline-primary rounded-pill m-sm-3 m-1"
-              href="#"
+              href="https://github.com/bishir-tm"
             >
               <i class="bi">
                 <svg
@@ -158,9 +152,9 @@
                 </svg>
               </i>
             </a>
-            <a
+            <a 
               class="btn shadow-lg btn-outline-primary rounded-pill m-sm-3 m-1"
-              href="#"
+              href="https://twitter.com/bishirtm"
               target="_blank"
             >
               <i class="bi">
@@ -178,9 +172,9 @@
                 </svg>
               </i>
             </a>
-            <a
+            <a target="_blank"
               class="btn shadow-lg btn-outline-primary rounded-pill m-sm-3 m-1"
-              href="#"
+              href="https://wa.link/9nzwvs"
             >
               <i class="bi">
                 <svg
@@ -359,14 +353,14 @@
               >
             </div>
           </div>
-          <div class="col-md-5 has-raduis mt-5 bg-dark">
+          <div class="col-md-5">
             <img
-              class="bg-dark"
-              src="./images/Screen Shot 2023-02-04 at 13.34.20.png"
+              class=""
+              src="./images/Budgeteer-mobile.png"
               alt=""
               srcset=""
               width="70%"
-              height="70%"
+              height="100%"
             />
           </div>
         </div>
@@ -494,14 +488,14 @@
               style="max-width: 18rem"
             >
               <div class="card-header bg-transparent border-0 pt-4">
-                2014-2022
+                2022-Present
               </div>
               <div class="card-body text-primary pt-0">
-                <h4 class="card-title text-oxford">Organisation</h4>
-                <h5 class="card-subtitle text-primary">post/title</h5>
+                <h4 class="card-title text-oxford">Freelance Web Developer</h4>
+                <!-- <h5 class="card-subtitle text-primary">post/title</h5> -->
                 <p class="card-text text-black">
-                  Some quick example text to build on the card title and make up
-                  the bulk of the card's content.
+                  Developing full stack web applications using HTML, 
+                  CSS, JS, Bootstrap, ReactJS, PHP, mySQL etc.
                 </p>
               </div>
             </div>
@@ -512,14 +506,15 @@
               style="max-width: 18rem"
             >
               <div class="card-header bg-transparent border-0 pt-4">
-                2014-2022
+                2021-2022
               </div>
               <div class="card-body text-primary pt-0">
-                <h4 class="card-title text-oxford">Organisation</h4>
-                <h5 class="card-subtitle text-primary">post/title</h5>
+                <h4 class="card-title text-oxford">ISERVNG Technologies</h4>
+                <h5 class="card-subtitle text-primary">In-House Graphics Designer</h5>
                 <p class="card-text text-black">
-                  Some quick example text to build on the card title and make up
-                  the bulk of the card's content.
+                  Responsible for designing their brand identity and 
+                  various marketing materials such as brochures, 
+                  flyers, and social media graphics.  
                 </p>
               </div>
             </div>
@@ -533,11 +528,10 @@
                 2014-2022
               </div>
               <div class="card-body text-primary pt-0">
-                <h4 class="card-title text-oxford">Organisation</h4>
-                <h5 class="card-subtitle text-primary">post/title</h5>
+                <h4 class="card-title text-oxford">Jugudum Arts</h4>
+                <h5 class="card-subtitle text-primary">Visual Artist</h5>
                 <p class="card-text text-black">
-                  Some quick example text to build on the card title and make up
-                  the bulk of the card's content.
+                  Incharge of 
                 </p>
               </div>
             </div>
@@ -550,33 +544,34 @@
         id=""
         class="d-flex flex-wrap flex-column border-top skills bg-oxford has-raduis m-auto py-5 pt-3"
       >
+        <script src="https://cdn.formspree.com/js/formbutton-v1.min.js" defer></script>
         <h3 class="text-center text-light m-5 bg-primary p-3 has-raduis">
           Contact Me
         </h3>
-        <form class="row g-3 mx-5 px-3">
+        <form class="row g-3 mx-5 px-3" action="https://formspree.io/f/xdovwbqr" method="POST">
           <div class="col-md-6">
             <label for="" class="form-label">Email:</label>
             <input
-              type="email"
+            type="email" name="email"
               class="rounded-pill form-control form-control-lg"
               id="inputEmail4"
               placeholder="email.."
             />
           </div>
-          <div class="col-md-6">
+          <!-- <div class="col-md-6">
             <label for="inputPassword4" class="form-label">Password:</label>
             <input
               type="password"
-              class="rounded-pill form-control form-control-lg"
+              class="rounded-pill form-control form-control- lg"
               id="inputPassword4"
               placeholder="password..."
             />
-          </div>
+          </div> -->
           <div class="row">
             <label for="" class="mt-5 form-label">Your Message:</label>
           </div>
           <textarea
-            name=""
+          name="message"
             id=""
             cols="30"
             rows="4"
@@ -596,7 +591,7 @@
           <dv class="row">
             <ul class="nav col-12 justify-content-end list-unstyled d-flex">
               <li>
-                <a class="btn btn-outline-primary rounded-pill" href="#">
+                <a class="btn btn-outline-primary rounded-pill" href="https://www.linkedin.com/in/bishir-tijjani-b1894726a" target="_blank">
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
                     width="25"
@@ -612,7 +607,7 @@
                 </a>
               </li>
               <li>
-                <a class="btn btn-outline-primary rounded-pill" href="#">
+                <a class="btn btn-outline-primary rounded-pill" href="https://github.com/bishir-tm" target="_blank">
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
                     width="25"
@@ -628,7 +623,7 @@
                 </a>
               </li>
               <li>
-                <a class="btn btn-outline-primary rounded-pill" href="#">
+                <a class="btn btn-outline-primary rounded-pill" href="https://twitter.com/bishirtm" target="_blank">
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
                     width="25"
@@ -646,12 +641,12 @@
             </ul>
           </dv>
 
-          <button class="btn btn-lg btn-outline-primary rounded-pill">
+          <a href="./assets/Resume01.pdf" target="_blank" class="text-deocration-none btn btn-lg btn-outline-primary rounded-pill">
             View Resume
-          </button>
-          <button class="btn btn-lg btn-outline-primary rounded-pill">
+          </a>
+          <a href="#contact" class="text-deocration-none btn btn-lg btn-outline-primary rounded-pill">
             Contact Me
-          </button>
+          </a>
         </div>
       </div>
       <hr class="bg-light" />
@@ -669,8 +664,8 @@
               <li>Phone: +2349068149540</li>
               <li>
                 LinkedIn:
-                <a href="https://www.linkedin.com/in/bishirtm"
-                  >https://www.linkedin.com/in/bishirtm</a
+                <a href="https://www.linkedin.com/in/bishir-tijjani-b1894726a"
+                  >https://www.linkedin.com/in/bishir-tijjani-b1894726a</a
                 >
               </li>
             </ul>
