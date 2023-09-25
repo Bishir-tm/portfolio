@@ -22,33 +22,30 @@
     font-size: large;
     
 }
-
-.bg-primary{
-    background-color: orangered !important;
+body{
+    background-image: url(../images/daniel-korpai-pKRNxEguRgM-unsplash.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
 }
+.all-container{
+    backdrop-filter: blur(10px);
+    background-color: rgba(11, 0, 53, 0.5);
+    
+}
+
+
 .btn-primary{
-    background-color: orangered;
     border: 0;
 }
-.btn-primary:hover{
-    background-color: rgb(208, 71, 22);
-}
+
 .btn-outline-primary{
     background-color: transparent;
-    border: 2px solid orangered;
-    color: orangered;
-}
-.btn-outline-primary:hover{
-    background-color: orangered;
-    color: white;
-    border-color: #ff0505;
+    border: 2px solid #0d6efd;
+    color: #0d6efd;
 }
 
-.text-primary{
-    color: orangered !important;
-}
-.border-primary{
-    border-color: orangered !important;
+.btn-outline-primary:hover{
+    color: white;
 }
 
 p,label,b,div,details,summary,span{
@@ -67,7 +64,7 @@ header{
 
 nav{
     right: 0;
-    background-color: #040926db;
+    background-color: #424242db;
     backdrop-filter: blur(7px);
     /* padding: 15px; */
     border-radius: 1.7rem;
@@ -75,7 +72,10 @@ nav{
 }
 
 .bg-oxford{
-    background-color: rgb(0, 14, 92);
+    backdrop-filter: blur(10px);
+    background-color: rgba(76, 76, 76, 0.598);
+    border: 0.5px solid #747474;
+
 }
 
 .text-oxford{
@@ -88,14 +88,14 @@ nav{
 }
 
 a.nav-link{
-    color: orangered;
+    color: #0d6efd;
     padding: 1rem;
     border-radius: 20px;
     
 }
 a.nav-link:hover{
     color: white;
-    background-color: orangered;
+    background-color: #0d6efd;
 }
 
 .navbar-collapse{
@@ -111,7 +111,7 @@ a.nav-link:hover{
 
 .navbar-toggler{
  font-size: xx-large;
- color: orangered;
+ color: #0d6efd;
 }
 
 
@@ -132,7 +132,7 @@ a.nav-link:hover{
 }
 
 li::marker{
-    color: orangered;
+    color: #0d6efd;
     font-size: xx-large;
     margin-top: -40px;
 }
@@ -150,12 +150,17 @@ li::marker{
     box-sizing: content-box;            
 }
 
+/* body{
+    cursor: url('cursor.svg') 15 15, auto;
+
+} */
+
 .animated{
     animation: up-down 2s ease-in-out infinite alternate-reverse both;
 }    
 .rainbow-text{
     background: #0D168C;
-    background: repeating-linear-gradient(to bottom left, #0D168C 0%, #B31210 100%);
+    background: repeating-linear-gradient(to bottom left, #1a27df 12%, #f36e6c 100%);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
 }
@@ -163,7 +168,7 @@ li::marker{
 
 a{
     text-decoration: none;
-    color: orangered;
+    color: #0d6efd;
     font-weight: 600;
     font-size: larger;
 }
@@ -204,7 +209,7 @@ a{
 
 .slick-prev.slick-arrow:before, .slick-next.slick-arrow:before {
     position: relative;
-    background-color: orangered;
+    background-color: #0d6efd;
     border-radius: 50%;
     padding: 3px;
     color: rgb(237, 227, 227);
@@ -226,7 +231,7 @@ ul.slick-dots button::before{
     font-size: x-large;
     width: 35px;
     height: 35px;
-    color: orangered !important;
+    color: #0d6efd !important;
 }
 
 .slick-list{
@@ -267,7 +272,7 @@ ul.slick-dots button::before{
     content: '';
     position: absolute;
     width: 5px;
-    background-color: orangered;
+    background-color: #0d6efd;
     height: 100%;
     top: 0px;
     bottom: 0px;
@@ -290,7 +295,7 @@ ul.slick-dots button::before{
 
 .timeline-card-container.left::before, .timeline-card-container.right::before{
     content: "";
-    background-color: orangered;
+    background-color: #0d6efd;
     width: 50px;
     height: 20px;
     display: flex;
@@ -318,7 +323,7 @@ ul.slick-dots button::before{
     }
     .timeline-card-container.left::before{
         content: "";
-        background-color: orangered;
+        background-color: #0d6efd;
         width: 50px;
         height: 20px;
         display: flex;
